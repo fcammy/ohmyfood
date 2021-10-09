@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/7f94446610.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ohmyfood</title>
+  </head>
+  <body>
+    <div id="loader" class="bouncing-loader">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+    <div class="container">
+      <!--Start nav-->
+      <nav>
+        <div class="logo">
+          <img src="/public/images/logo/ohmyfood.png" alt="ohmyfood logo" />
+        </div>
+        <button>
+          <span></span>
+        </button>
+        <ul>
+          <li>
+            <a href="#main">How it works</a>
+          </li>
+          <li>
+            <a href="">Restaurants</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!--Start header-->
+      <header>
+        <div class="hero">
+          <img
+            src="/public/images/restaurants/menu.jpg"
+            alt="restaurants menu"
+          />
+        </div>
+        <div class="location">
+          <div class="location__city">
+            <i class="fa fa-map-marker-alt"></i>
+            <p>Paris, Belleville</p>
+          </div>
+          <div class="location__menu">
+            <h1>Book the menu you like</h1>
+            <h2>Discover top-of-the-arts restaurants we picked for you.</h2>
+            <button type="submit">Explore our restaurants</button>
+          </div>
+        </div>
+      </header>
+      <main id="main">
+        <h3>How it works</h3>
+        <div class="main__buttons">
+          <button type="button">
+            <span>1</span>
+            <div class="button__details">
+              <i class="fas fa-mobile-alt"></i>
+              <p>Choose a restaurant</p>
+            </div>
+          </button>
+          <button type="button">
+            <span>2</span>
+            <div class="button__details">
+              <i class="fas fa-bars"></i>
+              <p>Create your menu</p>
+            </div>
+          </button>
+          <button type="button">
+            <span>3</span>
+            <div class="button__details">
+              <i class="fas fa-home"></i>
+              <p>Go enjoy it at the restaurant</p>
+            </div>
+          </button>
+        </div>
+        <div class="restaurants"></div>
+      </main>
+    </div>
+    <script src="./public/js/app.js"></script>
+  </body>
+</html>

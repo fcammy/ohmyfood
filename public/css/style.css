@@ -68,7 +68,14 @@ body {
   flex-direction: column;
   gap: 30px;
 }
-#main .main__buttons button {
+#main .main__buttons button:hover {
+  background-color: #f5edff;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+#main .main__buttons button:hover i {
+  color: #9356dc;
+}
+#main button {
   height: 4em;
   width: 30%;
   border-radius: 15px;
@@ -77,23 +84,24 @@ body {
   justify-content: start;
   align-items: center;
   align-self: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
 }
-#main .main__buttons button .button__details {
+#main button .button__details {
   display: flex;
   padding: 0px 45px;
 }
-#main .main__buttons button .button__details i {
+#main button .button__details i {
   font-size: 16px;
   padding-right: 10px;
   font-weight: bold;
 }
-#main .main__buttons button .button__details p {
+#main button .button__details p {
   font-size: 14px;
   font-weight: 600;
 }
-#main .main__buttons span {
+#main button span {
   display: flex;
-  margin-bottom: -15px;
+  margin-bottom: -20px;
   padding: 0px 7px;
   background: #9356DC;
   border-radius: 50%;
@@ -101,6 +109,42 @@ body {
   line-height: 1.7;
   color: #fff;
   margin-left: -10px;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+  width: 100%;
+  margin-top: 55px;
+}
+.restaurants h3 {
+  padding: 40px 0px 18px 20px;
+  font-weight: bold;
+}
+.restaurants .cards {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  margin: auto;
+  padding-bottom: 60px;
+}
+.restaurants .cards .card {
+  width: 100%;
+  border-radius: 20px;
+  height: 225px;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+.restaurants .cards .card a {
+  text-decoration: none;
+  color: inherit;
+}
+.restaurants .cards .card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .container {
@@ -264,9 +308,9 @@ nav ul a:hover {
 }
 .location .location__menu button {
   width: 200px;
-  height: 40px;
+  height: 45px;
   border-radius: 20px;
-  background: linear-gradient(90deg, #9356DC, #FF79DA);
+  background: linear-gradient(355deg, #9356DC, #FF79DA);
   color: #fff;
   border: transparent;
   font-weight: bold;
@@ -292,6 +336,42 @@ nav ul a:hover {
   }
   .location .location__menu h2 {
     font-size: 1.2em;
+    line-height: 1.5;
+  }
+  .location .location__menu button {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    word-spacing: 3px;
+  }
+
+  #main h3 {
+    text-align: left;
+  }
+  #main .main__buttons {
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #main .main__buttons button:hover i {
+    color: #9356DC;
+  }
+  #main .main__buttons button {
+    height: 5em;
+    width: 100%;
+    border-radius: 20px;
+    border: transparent;
+    background: #F6F6F6;
+  }
+  #main .main__buttons button .button__details {
+    display: flex;
+    padding: 0px 30px;
+  }
+  #main .main__buttons button .button__details i {
+    font-size: 16px;
+    padding-right: 25px;
+    font-weight: bold;
+    color: darkgrey;
   }
 }
 

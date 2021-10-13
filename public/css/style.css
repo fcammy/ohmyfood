@@ -111,42 +111,6 @@ body {
   margin-left: -10px;
 }
 
-.restaurants {
-  background-color: #F6F6F6;
-  width: 100%;
-  margin-top: 55px;
-}
-.restaurants h3 {
-  padding: 40px 0px 18px 20px;
-  font-weight: bold;
-}
-.restaurants .cards {
-  display: flex;
-  width: 100%;
-  gap: 20px;
-  margin: auto;
-  padding-bottom: 60px;
-}
-.restaurants .cards .card {
-  width: 100%;
-  border-radius: 20px;
-  height: 225px;
-  background-color: #fff;
-  position: relative;
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
-}
-.restaurants .cards .card a {
-  text-decoration: none;
-  color: inherit;
-}
-.restaurants .cards .card img {
-  width: 100%;
-  height: 70%;
-  object-fit: cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-}
-
 .container {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -372,6 +336,83 @@ nav ul a:hover {
     padding-right: 25px;
     font-weight: bold;
     color: darkgrey;
+  }
+}
+.restaurants {
+  background-color: #F6F6F6;
+  width: 100%;
+  margin-top: 55px;
+}
+.restaurants h3 {
+  padding: 40px 0px 18px 20px;
+  font-weight: bold;
+}
+.restaurants .cards {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  margin: auto;
+  padding-bottom: 60px;
+}
+.restaurants .cards .card {
+  width: 100%;
+  border-radius: 20px;
+  height: 225px;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.3);
+}
+.restaurants .cards .card a {
+  text-decoration: none;
+  color: inherit;
+}
+.restaurants .cards .card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restaurants .cards .card span {
+  position: absolute;
+  background-color: #99e2d0;
+  color: #278870;
+  right: 25px;
+  top: 10px;
+  width: 80px;
+  height: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+.restaurants .cards .card .card__details {
+  padding: 7px 0 0 15px;
+  position: relative;
+  line-height: 1.5;
+  text-align: left;
+}
+.restaurants .cards .card .card__details h4 {
+  font-weight: 600;
+  font-size: 16px;
+}
+.restaurants .cards .card .card__details h5 {
+  opacity: 85%;
+  font-weight: 400;
+  font-size: 14px;
+}
+.restaurants .cards .card .card__heart {
+  position: absolute;
+  top: 180px;
+  right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .restaurants {
+    background-color: #F6F6F6;
+    width: 100%;
+    margin-top: 55px;
+  }
+  .restaurants .cards {
+    flex-wrap: wrap;
   }
 }
 

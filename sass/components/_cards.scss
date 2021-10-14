@@ -67,9 +67,17 @@
             position: absolute;
             top: 180px;
             right: 10px;
+
+            border: 0;
+            background-color: transparent;
+
+            &.active {
+              color: $purple;
+            }
           }
         }
       }
+
     }
 
 

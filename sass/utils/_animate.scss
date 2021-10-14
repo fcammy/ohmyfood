@@ -1,3 +1,4 @@
+
 @keyframes bouncing-loader {
   from {
    
@@ -8,3 +9,13 @@
   }
 }
 
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

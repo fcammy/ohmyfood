@@ -27,7 +27,7 @@
     font-weight: 400;
     font-size: 17px;
 
-    i{
+    i {
       padding: 10px;
     }
   }
@@ -51,6 +51,8 @@
       color: #fff;
       border: transparent;
       font-weight: bold;
+      animation: SlideIn 1s 3.1s;
+      transition: all 1s ease-out;
     }
   }
 }

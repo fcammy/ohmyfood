@@ -31,6 +31,7 @@
       padding: 10px;
     }
   }
+
   .location__menu {
     line-height: 2;
     padding: 10px 15px;
@@ -40,14 +41,14 @@
       font-weight: 100;
       padding-bottom: 20px;
     }
+
     button {
       width: 200px;
       height: 45px;
       border-radius: 20px;
-      background: linear-gradient(
-      355deg, 
-      $purple, 
-      $pink);
+      background: linear-gradient(355deg,
+          $purple,
+          $pink);
       color: #fff;
       border: transparent;
       font-weight: bold;
@@ -71,6 +72,7 @@
     .location__city {
       font-weight: 500;
     }
+
     .location__menu {
 
       h1 {
@@ -79,58 +81,57 @@
         font-weight: 600;
         padding-bottom: 15px;
       }
-      h2{
+
+      h2 {
         font-size: 1.2em;
         line-height: 1.5;
       }
+
       button {
         font-family: 'Roboto', sans-serif;
         font-size: 0.9em;
         word-spacing: 3px;
       }
 
-      }
     }
+  }
 
   #main {
 
-      h3 {
-        text-align: left;
-      }
-      .main__buttons {
-        display: flex;
-        padding: 10px 20px;
-        flex-direction: column;
-        gap: 30px;
+    h3 {
+      text-align: left;
+    }
 
-        button:hover i {
-          color: $purple;
+    .main__buttons {
+      display: flex;
+      padding: 10px 20px;
+      flex-direction: column;
+      gap: 30px;
+
+      button:hover i {
+        color: $purple;
+      }
+
+      button {
+        height: 5em;
+        width: 100%;
+        border-radius: 20px;
+        border: transparent;
+        background: #F6F6F6;
+
+        .button__details {
+          display: flex;
+          padding: 0px 30px;
+
+          i {
+            font-size: 16px;
+            padding-right: 25px;
+            font-weight: bold;
+            color: darkgrey;
+          }
         }
-
-        button {
-          height: 5em;
-          width: 100%;
-          border-radius: 20px;
-          border: transparent;
-          background: #F6F6F6;
-           .button__details {
-             display: flex;
-             padding: 0px 30px;
-              i {
-                font-size: 16px;
-                padding-right: 25px;
-                font-weight: bold;
-                color: darkgrey;
-                  }
-              }
-           }
-        }
       }
+    }
+  }
 
-      }
-    
-      
-    
-
-
-  
+}

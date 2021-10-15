@@ -9,10 +9,11 @@ nav {
   .logo {
     height: auto;
 
-      img {
-        width: 150px;
-      }
+    img {
+      width: 150px;
+    }
   }
+
   ul {
     display: flex;
     font-size: 15px;
@@ -20,24 +21,26 @@ nav {
     margin-top: 20px;
     padding-right: 60px;
 
-    
 
-    li{
+
+    li {
       display: flex;
       list-style: none;
       color: #000;
-      
+
     }
+
     a {
       text-decoration: none;
       color: #000;
       margin-right: 20px;
-     
+
     }
-    & a:hover{
+
+    & a:hover {
       color: $teal;
       border-bottom: 3px solid $purple;
-      
+
     }
   }
 }
@@ -45,7 +48,8 @@ nav {
 @media screen and(max-width: 767px) {
   nav {
 
-    box-shadow:  0 4px 5px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 4px 5px 0 rgb(0 0 0 / 20%);
+
     ul {
       position: fixed;
       top: 0;
@@ -59,7 +63,7 @@ nav {
       transform: translateX(60vw);
       transition: all .5s ease;
       opacity: 0;
-      
+
     }
 
     button {
@@ -78,6 +82,7 @@ nav {
             transform: translateY(0) rotate(-45deg);
             background-color: #000;
           }
+
           &::after {
             transform: translateY(0) rotate(45deg);
             background-color: #000;
@@ -85,10 +90,10 @@ nav {
         }
       }
 
-      &.open + ul {
+      &.open+ul {
         transform: translateX(0);
         opacity: 1;
-        
+
       }
 
       span {
@@ -100,7 +105,7 @@ nav {
 
 
         &::before,
-        &::after{
+        &::after {
           content: "";
           display: block;
           width: inherit;
@@ -116,11 +121,13 @@ nav {
 
 
         }
+
         &::after {
           transform: translateY(10px);
         }
       }
     }
+
     .logo {
       display: flex;
       margin-left: 70px;

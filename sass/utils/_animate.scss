@@ -1,11 +1,11 @@
-
 @keyframes bouncing-loader {
   from {
-   
+
     transform: translateY(30px);
   }
+
   to {
-    transform:  translateY(0px);
+    transform: translateY(0px);
   }
 }
 
@@ -18,4 +18,29 @@
   100% {
     transform: translateX(0);
   }
+}
+
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 50%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+}
+
+.menu__item-1 {
+  animation-delay: 0.2s;
+}
+
+.menu__item-2 {
+  animation-delay: 0.5s;
+}
+
+.menu__item-3 {
+  animation-delay: 0.8s;
 }

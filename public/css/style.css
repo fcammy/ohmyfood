@@ -312,6 +312,9 @@ nav ul a:hover {
   animation: SlideIn 1s 3.1s;
   transition: all 1s ease-out;
 }
+.location .location__menu button:hover {
+  lighten: #9356DC, #FF79DA, 15%;
+}
 
 @media screen and (max-width: 767px) {
   .hero {

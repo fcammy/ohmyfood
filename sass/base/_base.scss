@@ -55,6 +55,7 @@ body {
 }
 
 #main {
+
   margin-top: 25px;
   padding: 0px 15px;
   text-align: center;
@@ -64,72 +65,52 @@ body {
     margin-bottom: 15px;
   }
 
-  .main__buttons {
+ 
+}
+
+.main__buttons {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  
+
+  button {
+    height: 50px;
+    font-weight: bold;
+    width: 95%;
+    border-radius: 15px;
+    border: transparent;
+    background: $grey;
     display: flex;
+    justify-content: start;
     align-items: center;
-    flex-direction: column;
-    gap: 30px;
+    align-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    @include light;
+     
 
-    button:hover {
+    span {
 
-      background-color: #f5edff;
-      box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
-      @include light;
-      
+      display: flex;
+      padding: 0px 7px;
+      background: $purple;
+      border-radius: 50%;
+      width: 1.7em;
+      line-height: 1.7;
+      color: #fff;
+      margin-left: -10px;
     }
 
-    button:hover i {
+    i {
 
-      color: #9356dc;
-
+      font-size: 16px;
+      padding-left: 20px;
+      font-weight: bold;
+      margin-right: 20px;
     }
-
-    button {
-      height: 4em;
-      width: 30%;
-      border-radius: 15px;
-      border: transparent;
-      background: $grey;
-      justify-content: start;
-      align-items: center;
-      align-self: center;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-      @include light;
-
-
-      .button__details {
-
-        display: flex;
-        padding: 0px 45px;
-
-        i {
-
-          font-size: 16px;
-          padding-right: 10px;
-          font-weight: bold;
-        }
-
-        p {
-          font-size: 14px;
-          font-weight: 600;
-        }
-      }
-
-      span {
-
-        display: flex;
-        margin-bottom: -20px;
-        padding: 0px 7px;
-        background: #9356DC;
-        border-radius: 50%;
-        width: 1.7em;
-        line-height: 1.7;
-        color: #fff;
-        margin-left: -10px;
-      }
-
-    }
-
-
   }
+
+
 }

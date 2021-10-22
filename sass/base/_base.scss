@@ -74,6 +74,7 @@ body {
 
       background-color: #f5edff;
       box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+      @include light;
       
     }
 
@@ -93,6 +94,7 @@ body {
       align-items: center;
       align-self: center;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+      @include light;
 
 
       .button__details {

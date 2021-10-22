@@ -46,9 +46,7 @@
       width: 200px;
       height: 45px;
       border-radius: 20px;
-      background: linear-gradient(355deg,
-          $purple,
-          $pink);
+      background: linear-gradient(to right, $purple, $pink);
       color: #fff;
       border: transparent;
       font-weight: bold;

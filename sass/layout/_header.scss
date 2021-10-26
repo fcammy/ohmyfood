@@ -109,18 +109,23 @@
       flex-direction: column;
       gap: 30px;
 
-      button:hover i {
-        color: $purple;
-      }
-
       button {
         height: 5em;
         width: 100%;
         border-radius: 20px;
         border: transparent;
         background: #F6F6F6;
-      
+
+        &:hover {
+          background-color: #f5edff;
+        }
       }
+
+      button:hover i {
+        color: $purple;
+        
+      }
+      
     }
   }
 

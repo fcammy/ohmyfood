@@ -343,15 +343,18 @@ nav ul a:hover {
     flex-direction: column;
     gap: 30px;
   }
-  #main .main__buttons button:hover i {
-    color: #9356DC;
-  }
   #main .main__buttons button {
     height: 5em;
     width: 100%;
     border-radius: 20px;
     border: transparent;
     background: #F6F6F6;
+  }
+  #main .main__buttons button:hover {
+    background-color: #f5edff;
+  }
+  #main .main__buttons button:hover i {
+    color: #9356DC;
   }
 }
 .footer {

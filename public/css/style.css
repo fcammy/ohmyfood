@@ -137,7 +137,8 @@ body {
   font-weight: 100;
   line-height: 1.7;
   font-size: 15px;
-  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 h1 {
@@ -147,25 +148,24 @@ h1 {
 }
 
 nav {
-  display: flex;
-  align-items: center;
-  padding: 15px;
+  padding: 25px;
   margin-bottom: 5px;
+}
+nav .container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
-nav .logo {
-  height: auto;
+nav button {
+  display: none;
 }
-nav .logo img {
+nav .logo {
   width: 150px;
 }
 nav ul {
   display: flex;
   font-size: 15px;
   font-weight: 500;
-  margin-top: 20px;
-  padding-right: 60px;
 }
 nav ul li {
   display: flex;
@@ -175,11 +175,12 @@ nav ul li {
 nav ul a {
   text-decoration: none;
   color: #000;
-  margin-right: 20px;
+  margin-left: 20px;
+  border-bottom: 3px solid transparent;
 }
 nav ul a:hover {
   color: #99E2D0;
-  border-bottom: 3px solid #9356DC;
+  border-color: #9356DC;
 }
 
 @media screen and (max-width: 767px) {
@@ -201,6 +202,7 @@ nav ul a:hover {
     opacity: 0;
   }
   nav button {
+    display: block;
     border: 0;
     background-color: transparent;
     width: 32px;
@@ -266,7 +268,7 @@ nav ul a:hover {
 
 .location {
   background: #F6F6F6;
-  height: 19em;
+  padding-bottom: 20px;
   text-align: center;
 }
 .location .location__city {
@@ -274,7 +276,6 @@ nav ul a:hover {
   justify-content: center;
   align-items: center;
   background: #EAEAEA;
-  height: 3em;
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
@@ -292,9 +293,8 @@ nav ul a:hover {
   padding-bottom: 20px;
 }
 .location .location__menu button {
-  width: 200px;
-  height: 45px;
   border-radius: 20px;
+  padding: 20px;
   background: linear-gradient(to right, #9356DC, #FF79DA);
   color: #fff;
   border: transparent;
@@ -325,13 +325,11 @@ nav ul a:hover {
     padding-bottom: 15px;
   }
   .location .location__menu h2 {
-    font-size: 1.2em;
     line-height: 1.5;
   }
   .location .location__menu button {
     font-family: "Roboto", sans-serif;
-    font-size: 0.9em;
-    word-spacing: 3px;
+    padding: 20px;
   }
 
   #main h3 {
@@ -429,6 +427,7 @@ nav ul a:hover {
   height: 25px;
   text-align: center;
   font-weight: bold;
+  font-size: 13px;
 }
 .restaurants .cards .card .card__details {
   padding: 7px 0 0 15px;

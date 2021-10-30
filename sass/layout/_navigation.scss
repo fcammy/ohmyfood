@@ -1,25 +1,29 @@
 nav {
-  display: flex;
-  align-items: center;
-  padding: 15px;
+  padding: 25px;
   margin-bottom: 5px;
-  justify-content: space-between;
-  align-items: center;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+
+  button {
+    display: none;
+  }
+
+
 
   .logo {
-    height: auto;
-
-    img {
-      width: 150px;
-    }
+    width: 150px;
   }
+  
 
   ul {
     display: flex;
     font-size: 15px;
     font-weight: 500;
-    margin-top: 20px;
-    padding-right: 60px;
 
 
 
@@ -33,13 +37,14 @@ nav {
     a {
       text-decoration: none;
       color: #000;
-      margin-right: 20px;
+      margin-left: 20px;
+      border-bottom: 3px solid transparent
 
     }
 
     & a:hover {
       color: $teal;
-      border-bottom: 3px solid $purple;
+      border-color: $purple;
 
     }
   }
@@ -49,6 +54,8 @@ nav {
   nav {
 
     box-shadow: 0 4px 5px 0 rgb(0 0 0 / 20%);
+
+
 
     ul {
       position: fixed;
@@ -67,6 +74,8 @@ nav {
     }
 
     button {
+      display: block;
+
       border: 0;
       background-color: transparent;
       width: 32px;

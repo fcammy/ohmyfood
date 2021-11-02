@@ -156,11 +156,11 @@ nav .container {
   justify-content: space-between;
   align-items: center;
 }
+nav .container .logo {
+  width: 150px;
+}
 nav button {
   display: none;
-}
-nav .logo {
-  width: 150px;
 }
 nav ul {
   display: flex;

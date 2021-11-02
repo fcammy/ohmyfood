@@ -6,56 +6,44 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+
+    .logo {
+      width: 150px;
+    }
   }
 
   button {
     display: none;
   }
 
-
-
-  .logo {
-    width: 150px;
-  }
-  
-
   ul {
     display: flex;
     font-size: 15px;
     font-weight: 500;
 
-
-
     li {
       display: flex;
       list-style: none;
       color: #000;
-
     }
 
     a {
       text-decoration: none;
       color: #000;
       margin-left: 20px;
-      border-bottom: 3px solid transparent
-
+      border-bottom: 3px solid transparent;
     }
 
     & a:hover {
       color: $teal;
       border-color: $purple;
-
     }
   }
 }
 
 @media screen and(max-width: 767px) {
   nav {
-
     box-shadow: 0 4px 5px 0 rgb(0 0 0 / 20%);
-
-
 
     ul {
       position: fixed;
@@ -68,9 +56,8 @@ nav {
       padding: 75px 50px 40px;
       z-index: 98;
       transform: translateX(60vw);
-      transition: all .5s ease;
+      transition: all 0.5s ease;
       opacity: 0;
-
     }
 
     button {
@@ -102,7 +89,6 @@ nav {
       &.open+ul {
         transform: translateX(0);
         opacity: 1;
-
       }
 
       span {
@@ -111,7 +97,6 @@ nav {
         height: 2px;
         background-color: #000;
         display: block;
-
 
         &::before,
         &::after {
@@ -122,13 +107,11 @@ nav {
           position: absolute;
           right: 0;
           background-color: inherit;
-          transition: all .5s ease;
+          transition: all 0.5s ease;
         }
 
         &::before {
           transform: translateY(-10px);
-
-
         }
 
         &::after {

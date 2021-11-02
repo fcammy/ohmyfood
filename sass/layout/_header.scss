@@ -51,9 +51,7 @@
       font-weight: bold;
       animation: SlideIn 1s 3.1s;
       transition: all 1s ease-out;
-      &:hover {
-        @include light;
-      }
+      
     }
   }
 }
